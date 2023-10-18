@@ -66,7 +66,7 @@ Clone this repository to your desired folder by running the following commands i
 ```sh
   cd your-prefered-folder-name
   
-  git clone git@github.com:jcmunav63/vet_clinic_db.git
+  git clone git@github.com:jcmunav63/decode_morse_message.git
 ```
 
 ### Prerequisites
@@ -75,11 +75,8 @@ In order to run this project you need:
 
 - A modern web browser (Chrome, Firefox, Safari, Edge).
 - An IDE (e.g.: Vscode, Sublime Text,...).
-- A terminal (Git Bash).
-- Create a React project, including Webpack project bundler.
-- PostgreSQL server installed in your local machine or full access to a database installed on a remote server.
-- Create the database and tables according to the included SQL queries.
-- Create a React project using command "create-react-app".
+- Install Ruby
+- A terminal (Ruby).
 
 ### Setup
 
@@ -128,10 +125,8 @@ To run the project, execute the following command:
 To run linters checking, run the following command:
 
 ```sh
+Run rubocop.
 
-  npx stylelint "**/*.{css,scss}" (--fix option)
-
-  npx eslint "**/*.{js,jsx}" (--fix option)
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -158,9 +153,6 @@ To run linters checking, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Development of all front end components]**
-- **[Development of back end logic]**
-- **[Testing of front and back end components]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
