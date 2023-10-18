@@ -38,18 +38,17 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- HTML5, CSS3 & JAVASCRIPT.
-- REACT.JS (Front End).
-- EXPRESS.JS (Back End).
-- POSTGRESQL (Database server).
+- RUBY LANGUAGE.
+- VS CODE (code editor).
+- RUBOCOP (Ruby linter code analyzer).
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[Connects and interacts with a local or remote database server, using a PostgreSQL DBMS]**
-- **[Includes front end components using React.js]**
-- **[Implements a basic back end logic for connecting the main components with the database server]**
+- **The app receives a message written in Morse code.**
+- **It separates the words and characters in each word to decode one by one.**
+- **It assembles back the message decoded into English and prints it out.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,7 +56,8 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> This project could be used for starting a web app that has a connection with a local or remote database.
+> This project could be used for decoding a Morse message in your local machine.
+> It can also be used as a module to display and use on a webpage.
 
 To get a local copy up and running, follow these steps.
 
@@ -66,7 +66,7 @@ Clone this repository to your desired folder by running the following commands i
 ```sh
   cd your-prefered-folder-name
   
-  git clone git@github.com:jcmunav63/vet_clinic_db.git
+  git clone git@github.com:jcmunav63/decode_morse_message.git
 ```
 
 ### Prerequisites
@@ -75,11 +75,8 @@ In order to run this project you need:
 
 - A modern web browser (Chrome, Firefox, Safari, Edge).
 - An IDE (e.g.: Vscode, Sublime Text,...).
-- A terminal (Git Bash).
-- Create a React project, including Webpack project bundler.
-- PostgreSQL server installed in your local machine or full access to a database installed on a remote server.
-- Create the database and tables according to the included SQL queries.
-- Create a React project using command "create-react-app".
+- Install Ruby
+- A terminal (Ruby).
 
 ### Setup
 
@@ -88,7 +85,7 @@ Clone this repository to your desired folder by running the following commands i
 ```sh
   cd your-prefered-folder-name
   
-  git clone git@github.com:jcmunav63/vet_clinic_db.git
+  git clone git@github.com:jcmunav63/decode_morse_message.git
 ```
 
 ### Install
@@ -96,15 +93,19 @@ Clone this repository to your desired folder by running the following commands i
 Install this project with:
 
 ```sh
-  cd vet_clinic_db
+  cd decode_morse_message
 
-  npx create-react-app .  (inside of the root directory)
+  gem install bundler
 
-  npm init -y
+  bundle init
 
-  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+  Add this line to your Gemfile
+    gem 'rubocop', '>= 1.0', '< 2.0'
+  
+  Run bundle install
 
-  npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x
+  Create a new file .rubocop.yml and copy the file
+  provided in the linters instructions.
 ```
 
 ### Usage
@@ -112,15 +113,20 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  Open the project in Webpack dev server or Open the index.html file, from dist/ folder, on your browser.
-```
-### Build the project with Webpack and run a dev server
-```
-  Run the following commands in the terminal:
+  Install Code-Runner extension on VS Code.
 
-  npm run build
-  
-  npm start
+  Install Ruby LSP extension on VS Code.
+
+  Run your program with Run Code option innside of VS Code (Play symbol).
+  The output of your code will be shown on the terminal (output tab).
+```
+### Run your code on IRB (Interactive Ruby Shell)
+```
+  You can optionally run your code using IRB shell...
+
+  Open your IRB shell.
+
+  Copy your Ruby code to the IRB shell + <Enter>
 ```
 
 ### Run linters tests
@@ -128,10 +134,8 @@ To run the project, execute the following command:
 To run linters checking, run the following command:
 
 ```sh
+Run rubocop on your VS Code terminal.
 
-  npx stylelint "**/*.{css,scss}" (--fix option)
-
-  npx eslint "**/*.{js,jsx}" (--fix option)
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -158,9 +162,7 @@ To run linters checking, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Development of all front end components]**
-- **[Development of back end logic]**
-- **[Testing of front and back end components]**
+- We can adapt this code to use on a web app for decoding Morse codes.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
