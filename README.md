@@ -1,4 +1,4 @@
-# VET_CLINIC APP [curriculum-databases-projects-template]
+# DECODE A MORSE MESSAGE
 
 <a name="readme-top"></a>
 
@@ -28,11 +28,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Vet Clinic App] <a name="about-project"></a>
+# 📖 [Decode a Morse Message] <a name="about-project"></a>
 
-> This is a simple web app project for managing and displaying business information about animals, services, and clients from a local Vet Clinic.
+> This is a simple Ruby app project for decoding a message written in Morse code into plain English words.
 
-**[Vet Clinic App]** It's a simple web app for managing and displaying information about animals, services, and clients of a local Vet Clinic.
+**[Decode a Morse Message]** It's a simple Ruby app for decoding a message written in Morse code into plain English words.
 
 ## 🛠 Built With <a name="built-with"></a>
 
